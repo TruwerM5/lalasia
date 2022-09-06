@@ -87,6 +87,11 @@ p {
     padding: 20px 24px;
 }
 
+
+.container-inline {
+    padding: 0 24px;
+}
+
 .primary {
     background-color: var(--primary);
     padding: 10px 26px;
@@ -94,17 +99,34 @@ p {
     font-weight: var(--fw-700);
 }
 
+.section {
+    margin-bottom: 100px;
+}
 
+.secondary {
+    color: var(--secondary);
+    font-weight: var(--fw-700);
+    margin-bottom: 8px;
+}
+
+.h3 {
+    font-size: 2.4rem;
+    margin-bottom: 16px;
+}
+
+.h6 { 
+    font-size: 1.6rem; 
+    font-weight: var(--fw-700);
+}
 /*-------------------------\
     *HEADER
 \-------------------------*/
 
 .header {
-    /* position:fixed;
-    top: 0; */
     width: 100%;
     min-height: 1px;
     border-bottom: 2px solid var(--light-gray);
+    margin-bottom: 50px;
     
 }
 
@@ -199,8 +221,12 @@ p {
     text-align: center;
 }
 
-.discover .container > *:not(.h1) {
+.discover .main-title > *:not(.h1) {
     margin-bottom: 30px;
+}
+
+.discover .container-inline > *:last-child {
+    margin-bottom: 0;
 }
 
 .input-wrapper {
@@ -218,3 +244,28 @@ p {
 .input-wrapper button {
     padding: 10px 26px;
 }
+
+.discover img {
+    height: 160px;
+}
+
+/*-------------------------\
+    *BENEFITS
+\-------------------------*/
+
+.benefit-item {
+    box-shadow: var(--box-shadow);
+    padding: 16px;
+    margin-top: 30px;
+}
+
+.benefit-icon-wrapper {
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    background-color: #F9F9F9;
+    border-radius: 50%;
+    margin-bottom: 14px;
+}
+
+.benefit-item .h6 { margin-bottom: 6px; }
