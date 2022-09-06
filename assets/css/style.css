@@ -39,6 +39,7 @@ body {
     font-family: var(--ff-inter);
     color: var(--title);
     background-color: var(--white);
+    height: 300vh;
 }
 
 a,
@@ -88,13 +89,19 @@ p {
 \-------------------------*/
 
 .header {
-    position:relative;
+    /* position:fixed;
+    top: 0; */
+    width: 100%;
     min-height: 1px;
+    border-bottom: 2px solid var(--light-gray);
+    
 }
 
 .header__inner {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
 }
 
 .logo {
@@ -121,18 +128,11 @@ p {
 
 .nav-close { transform: rotate(45deg);}
 
-.closed .nav-close { display: none; }
-
-.closed .nav-open { display: block; }
-
-.opened .nav-open { display: none; }
-
-.opened .nav-close { display: block; }
 
 
 .navbar {
     position: fixed;
-    top: -100%;
+    top: 100%;
     left: 0;
     height: 100%;
     width: 100%;
@@ -140,13 +140,16 @@ p {
     justify-content: center;
     align-items: center;
     visibility: hidden;
-    transition: .5s linear;
+    transition: .5s ease;
     z-index: 1;
+    background-color: var(--white);
+    
 }
 
 .navbar.active {
     visibility: visible;
-    top: 82px;
+    top: 0;
+    transition: .5s ease-in-out;
 }
 .navbar-item {
     margin-block: 30px;
@@ -170,3 +173,4 @@ p {
     display: flex;
     gap: 24px;
 }
+
