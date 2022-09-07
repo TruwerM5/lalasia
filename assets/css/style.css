@@ -61,7 +61,7 @@ input {
     color: inherit;
     background-color: inherit;
 }
-
+button { width: 100%; }
 button:hover {
     cursor: pointer;
 }
@@ -161,6 +161,8 @@ p {
     font-size: 2.8rem;
     display: flex;
     align-items: center;
+    width: 1em;
+    height: 1em;
 }
 
 .nav-close { transform: rotate(45deg);}
@@ -334,3 +336,31 @@ p {
     font-size: 1.6rem;
     font-weight: var(--fw-700);
 }
+
+/*-------------------------\
+    *OUR PRODUCT
+\-------------------------*/
+
+.our-product .row {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.our-product .title p,
+.our-product button { margin-bottom: 30px; }
+
+.number-list {
+    padding-bottom: 50px;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.number { 
+    font-size: 2.2rem;
+    font-weight: var(--fw-700);
+    margin-bottom: 4px;
+}
+
+.number-title { font: var(--fw-500); }
