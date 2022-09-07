@@ -40,7 +40,7 @@ body {
     font-family: var(--ff-inter);
     color: var(--title);
     background-color: var(--white);
-    height: 300vh;
+    height: 400vh;
 }
 
 a,
@@ -117,6 +117,10 @@ p {
 .h6 { 
     font-size: 1.6rem; 
     font-weight: var(--fw-700);
+}
+
+.text-center {
+    text-align: center;
 }
 /*-------------------------\
     *HEADER
@@ -269,3 +273,63 @@ p {
 }
 
 .benefit-item .h6 { margin-bottom: 6px; }
+
+/*-------------------------\
+    *POPULAR PRODUCT
+\-------------------------*/
+
+.carousel {
+    margin-top: 50px;
+}
+
+.carousel__inner {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding-block-end: 20px;
+    scroll-snap-type: inline mandatory;
+}
+
+.carousel__inner::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel__inner > * {
+    flex: 1;
+}
+.carousel__inner .carousel-item {
+    min-width: calc(50% - 10px);
+    scroll-snap-align: center;
+}
+.carousel img {
+    width: 220px;
+    height: 194px;
+}
+
+.carousel figcaption {
+    margin-top: 14px;
+}
+
+.product-name {
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+    font-weight: var(--fw-700);
+}
+
+.product-title {
+    margin-bottom: 4px;
+    font-size: 1.6rem;
+    font-weight: var(--fw-700);
+}
+
+.product-text {
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    font-weight: var(--fw-500);
+}
+
+.product-price {
+    font-size: 1.6rem;
+    font-weight: var(--fw-700);
+}
