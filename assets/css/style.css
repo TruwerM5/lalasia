@@ -288,7 +288,8 @@ p {
     gap: 30px;
     overflow-x: auto;
     padding-block-end: 20px;
-    scroll-snap-type: inline mandatory;
+    padding-inline: 20px;
+    scroll-snap-type: inline proximity;
 }
 
 .carousel__inner::-webkit-scrollbar {
