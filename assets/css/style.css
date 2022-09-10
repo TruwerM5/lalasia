@@ -379,12 +379,15 @@ p {
 
 .customers .carousel {
     margin-top: 0;
+}
+.customers .carousel__inner {
     padding-block-start: 30px;
 }
-
 .card {
-    min-width: 100% !important;
+    min-width: 90% !important;
     box-shadow: 0px 4px 100px rgba(175, 173, 181, 0.1);
+    padding: 16px;
+    scroll-snap-align: start;
 }
 .card img {
     width: 100%;
