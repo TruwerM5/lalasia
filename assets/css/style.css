@@ -35,12 +35,12 @@ html {
 
 body {
     max-width: 1400px;
+    margin-inline: auto;
     font-size: 1.4rem;
     line-height: 1.3;
     font-family: var(--ff-inter);
     color: var(--title);
     background-color: var(--white);
-    height: 400vh;
 }
 
 a,
@@ -76,6 +76,7 @@ a {
 p {
     line-height: 1.3;
     color: var(--gray);
+    font-weight: var(--fw-500);
 }
 
 
@@ -316,6 +317,10 @@ p {
 /*-------------------------\
     *POPULAR PRODUCT
 \-------------------------*/
+.popular-product .title {
+    margin-block-end: 30px;
+}
+
 .product-name {
     margin-bottom: 6px;
     font-size: 1.2rem;
@@ -500,11 +505,10 @@ p {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    flex: 2;
 }
 
 .article-item > img { 
-    flex: 1;
+    width: 110px;
 }
 
 .article-subtitle {
@@ -537,3 +541,60 @@ p {
 }
 
 .article-date { display: none; }
+
+/*-------------------------\
+    *JOIN
+\-------------------------*/
+
+.join {
+    margin-bottom: 20px;
+}
+
+.join .row {
+    padding-block-end: 50px;
+    border-bottom: 1.5px solid #ECE4DE;
+}
+
+.learn-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    gap: 10px;
+}
+
+.learn-more ion-icon {
+    font-size: 1.5rem;
+    font-weight: var(--fw-400);
+}
+
+/*-------------------------\
+    *FOOTER
+\-------------------------*/
+.footer {
+    padding-block-end: 24px;
+}
+
+.footer-title {
+    margin-bottom: 30px;
+}
+
+.footer-content {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-list-title {
+    font-size: 1.6rem;
+    font-weight: var(--fw-700);
+    margin-bottom: 14px;
+}
+
+.footer-list-item:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.footer-list-link {
+    color: var(--gray);
+    font-weight: var(--fw-500);
+}
