@@ -15,3 +15,11 @@ function addEvent(button, addCls, removeCls) {
 
 addEvent(openButton, 'opened', 'closed');
 addEvent(closeButton, 'closed', 'opened');
+
+
+const hero = document.querySelector('[data-hero]');
+const readMoreBtn = document.querySelector('[data-read-more]');
+
+readMoreBtn.addEventListener('click', function(){
+    hero.classList.toggle('enabled');
+})
