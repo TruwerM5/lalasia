@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lalasia</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <!--
         *STYLES
     -->
@@ -84,9 +85,8 @@
                             <input type="text" name="search-input" id="search" placeholder="Search property">
                             <button class="search-button primary">Search</button>
                         </div>
-                        <figure class="discover-img">
-                            <img src="assets/images/discover.jpg" alt="discover">
-                        </figure>
+                    </div>
+                    <div class="discover-img main-hero" style="background-image: url('assets/images/discover.jpg');">
                     </div>
                 </div>
             </section>
@@ -110,36 +110,37 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="column benefit-item">
-                                <figure class="benefit-icon-wrapper">
-                                    <img src="assets/images/3square.svg" alt="3 square">
-                                </figure>
-                                <h6 class="h6">Many Choices</h6>
-                                <p>Pellentesque etiam blandit in tincidunt at donec. 
-                                    Eget ipsum dignissim placerat nisi, adipiscing mauris 
-                                    non. </p>
-                            </div>
-                            <div class="column benefit-item">
-                                <figure class="benefit-icon-wrapper">
-                                    <img src="assets/images/calendar-tick.svg" alt="calendar">
-                                </figure>
-                                <h6 class="h6">Fast and On Time</h6>
-                                <p>Pellentesque etiam blandit in tincidunt at donec. 
-                                    Eget ipsum dignissim placerat nisi, adipiscing mauris 
-                                    non. </p>
-                            </div>
-                            <div class="column benefit-item">
-                                <figure class="benefit-icon-wrapper">
-                                    <img src="assets/images/money-tick.svg" alt="money tick">
-                                </figure>
-                                <h6 class="h6">Affordable Price</h6>
-                                <p>Pellentesque etiam blandit in tincidunt at donec. 
-                                    Eget ipsum dignissim placerat nisi, adipiscing mauris 
-                                    non. </p>
-                            </div>
+                    </div>
+                    <div class="row benefits-content">
+                        <div class="column benefit-item">
+                            <figure class="benefit-icon-wrapper">
+                                <img src="assets/images/3square.svg" alt="3 square">
+                            </figure>
+                            <h6 class="h6">Many Choices</h6>
+                            <p>Pellentesque etiam blandit in tincidunt at donec. 
+                                Eget ipsum dignissim placerat nisi, adipiscing mauris 
+                                non. </p>
+                        </div>
+                        <div class="column benefit-item">
+                            <figure class="benefit-icon-wrapper">
+                                <img src="assets/images/calendar-tick.svg" alt="calendar">
+                            </figure>
+                            <h6 class="h6">Fast and On Time</h6>
+                            <p>Pellentesque etiam blandit in tincidunt at donec. 
+                                Eget ipsum dignissim placerat nisi, adipiscing mauris 
+                                non. </p>
+                        </div>
+                        <div class="column benefit-item">
+                            <figure class="benefit-icon-wrapper">
+                                <img src="assets/images/money-tick.svg" alt="money tick">
+                            </figure>
+                            <h6 class="h6">Affordable Price</h6>
+                            <p>Pellentesque etiam blandit in tincidunt at donec. 
+                                Eget ipsum dignissim placerat nisi, adipiscing mauris 
+                                non. </p>
                         </div>
                     </div>
+                    
                 </div>
             </section>
 
@@ -157,7 +158,6 @@
                 </div>
                 <div class="carousel">
                     <div class="carousel__inner">
-
                         <a href="#" class="carousel-item-link">
                             <figure class="carousel-item">
                                 <img src="assets/images/bookshelf.jpg" alt="bookshelf">
@@ -224,7 +224,7 @@
                                  dui tincidunt pulvinar
                             </p>
                             <button class="primary">Learn more</button>
-                            <figure>
+                            <figure class="our-product-title-img">
                                 <img src="assets/images/unsplash.jpg" alt="unsplash">
                             </figure>
                         </div>
@@ -243,7 +243,7 @@
                                     <p class="number-title">Project Finished</p>
                                 </li>
                             </ul>
-                            <figure>
+                            <figure class="our-product-list-img">
                                 <img src="assets/images/unsplash2.jpg" alt="unsplash">
                             </figure>
                         </div>
@@ -363,7 +363,6 @@
                                             <img src="assets/images/article-author-1.jpg" alt="author">
                                             <figcaption>
                                                 <span class="author-name">By Michaela Augus</span>
-                                                <p class="article-date">Friday, 1 April 2022</p>
                                             </figcaption>
                                         </figure>
                                     </figcaption>
@@ -379,7 +378,6 @@
                                             <img src="assets/images/article-author-2.jpg" alt="author">
                                             <figcaption>
                                                 <span class="author-name">By Jerremy Jean</span>
-                                                <p class="article-date">Friday, 1 April 2022</p>
                                             </figcaption>
                                         </figure>
                                     </figcaption>
@@ -395,7 +393,6 @@
                                             <img src="assets/images/article-author-3.jpg" alt="author">
                                             <figcaption>
                                                 <span class="author-name">By Kim Gurameh</span>
-                                                <p class="article-date">Friday, 1 April 2022</p>
                                             </figcaption>
                                         </figure>
                                     </figcaption>
@@ -428,68 +425,75 @@
     -->
     <footer class="footer">
         <div class="container-inline">
-            <div class="footer-title">
-                <a href="index.html" class="logo">
-                    <figure class="logo-img">
-                        <img src="assets/images/logo.png" alt="logo">
-                        <figcaption class="logo-text"></figcaption>
-                    </figure>
-                    Lalasia
-                </a>
-                <p>
-                    Lalasia is digital agency that help you make better experience iaculis cras in.
-                </p>
+            <div class="row">
+                <div class="column">
+                    <div class="footer-title">
+                        <a href="index.html" class="logo">
+                            <figure class="logo-img">
+                                <img src="assets/images/logo.png" alt="logo">
+                                <figcaption class="logo-text"></figcaption>
+                            </figure>
+                            Lalasia
+                        </a>
+                        <p>
+                            Lalasia is digital agency that help you make better experience iaculis cras in.
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footer-content">
+                        <div class="footer-list__wrapper">
+                            <h5 class="h5 footer-list-title">Product</h5>
+                            <ul class="footer-list">
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">New Arrivals</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Best Selling</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Home Decor</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Kitchen Set</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-list__wrapper">
+                            <h5 class="h5 footer-list-title">Services</h5>
+                            <ul class="footer-list">
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Catalog</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Blog</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Faq</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Pricing</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-list__wrapper">
+                            <h5 class="h5 footer-list-title">Follow Us</h5>
+                            <ul class="footer-list">
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Facebook</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Instagram</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="footer-content">
-                <div class="footer-list__wrapper">
-                    <h5 class="h5 footer-list-title">Product</h5>
-                    <ul class="footer-list">
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">New Arrivals</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Best Selling</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Home Decor</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Kitchen Set</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-list__wrapper">
-                    <h5 class="h5 footer-list-title">Services</h5>
-                    <ul class="footer-list">
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Catalog</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Blog</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Faq</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Pricing</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-list__wrapper">
-                    <h5 class="h5 footer-list-title">Follow Us</h5>
-                    <ul class="footer-list">
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Facebook</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Instagram</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Twitter</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            
         </div>
     </footer>
 
