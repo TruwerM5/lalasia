@@ -917,3 +917,110 @@ p {
         margin-bottom: 36px;
     }
 }
+
+
+
+
+/*----------------------------------------*\
+
+    *PRODUCTS
+
+\*----------------------------------------*/
+/*--------------------------*\
+    *product-hero slider
+\*--------------------------*/
+.products .main-title {
+    margin-block-end: 30px;
+}
+.products-hero {
+    position: relative;
+    height: 180px;
+}
+
+/* .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+} */
+
+.slider {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.slider__inner {
+    width: 100%;
+    display: flex;
+    transition: transform 1.5s ease-in-out;
+}
+
+.slider-item {
+    position: relative;
+    min-width: 100%;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+}
+
+.slider-content {
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    padding: 40px 120px 30px 24px;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background: linear-gradient(360deg, #151411 -12.91%, rgba(21, 20, 17, 0) 66.65%);
+    z-index: -1;
+}
+
+.slider-subtitle {
+    width: max-content;
+    font-size: 1rem;
+    font-weight: var(--fw-500);
+    padding: 6px 10px;
+    border-radius: 16px;
+    margin-block-end: 14px;
+}
+
+.slider-title {
+    font-size: 1.6rem;
+    margin-block-end: 4px;
+}
+
+.slider-text {
+    font-size: 1.2rem;
+}
+
+.slider-buttons {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    z-index: 2;
+}
+
+.slider-button {
+    width: max-content;
+}
+
+.slider-button ion-icon {
+    color: #FFF;
+    opacity: 0.4;
+    font-size: 1rem;
+    transition: opacity 1s;
+}
+
+.slider-button.active ion-icon{
+    opacity: 1;
+}

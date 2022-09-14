@@ -19,7 +19,8 @@ addEvent(closeButton, 'closed', 'opened');
 
 const hero = document.querySelector('[data-hero]');
 const readMoreBtn = document.querySelector('[data-read-more]');
-
-readMoreBtn.addEventListener('click', function(){
-    hero.classList.toggle('enabled');
-})
+if(readMoreBtn) {
+    readMoreBtn.addEventListener('click', function(){
+        hero.classList.toggle('enabled');
+    })
+}
