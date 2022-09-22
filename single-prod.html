@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lalasia</title>
+        <!--
+            FAVICON
+        -->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+        <!--
+            *STYLES
+        -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--
+            *GOOGLE FONTS
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <!--
+        *HEADER
+    -->
+    <header class="header" id="top">
+        <div class="header__inner container">
+            <a href="index.html" class="logo">
+                <figure class="logo-img">
+                    <img src="assets/images/logo.png" alt="logo">
+                    <figcaption class="logo-text"></figcaption>
+                </figure>
+                Lalasia
+            </a>
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li class="navbar-item active">
+                        <a href="products.html" class="navbar-link" data-nav-link>Product</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-nav-link>Services</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-nav-link>Article</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-nav-link>About Us</a>
+                    </li>
+                </ul>
+                <button class="nav-close" data-nav-close>
+                    <ion-icon name="add-sharp"></ion-icon>
+                </button>
+            </nav>
+            <div class="nav-button-container closed" data-button-container>
+                <button class="nav-open active" data-nav-open>
+                    <ion-icon name="menu-sharp"></ion-icon>
+                </button>                
+            </div>
+            <div class="nav-extra">
+                <ul class="nav-extra-list">
+                    <li class="extra-nav-item">
+                        <a href="#"><img src="assets/images/bag-2.png" alt="bag"></a>
+                    </li>
+                    <li class="extra-nav-item">
+                        <a href="#"><img src="assets/images/user.png" alt="user"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-products main-product">
+            <div class="container-inline">
+                <figure class="row">
+                    <div class="column main-product-img">
+                        <img src="assets/images/products/product-img-1.jpg" alt="product">
+                    </div>
+                    <div class="column main-product-caption">
+                        <h3 class="h3 main-product-title">White Aesthetic Chair</h3>
+                        <p class="main-product-subtitle">Combination of wood and wool</p>
+                        <span>Color</span>
+                        <ul class="colors-list">
+                            <li class="colors-list-item">
+                                <a href="#" class="black-color"></a>
+                            </li>
+                            <li class="colors-list-item">
+                                <a href="#" class="primary-dark-color"></a>
+                            </li>
+                            <li class="colors-list-item">
+                                <a href="#" class="light-brown-color"></a>
+                            </li>
+                            <li class="colors-list-item">
+                                <a href="#" class="light-gray-color"></a>
+                            </li>
+                        </ul>
+                        <p class="main-product-text">
+                            Faucibus facilisi morbi pharetra quis sed. Vitae suspendisse facilisis 
+                            facilisis ligula felis et a parturient aenean. Ac maecenas ultricies 
+                            felis risus scelerisque duis posuere...
+                            <a href="#" class="read-more">Read More</a>
+                        </p>
+                        <span class="main-product-price h3">$99.98</span>
+                        <div class="row">
+                            <div class="column">
+                                <button class="primary buy-button">Buy Now</button>
+                            </div>
+                            <div class="column">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+<!--
+        *FOOTER
+    -->
+    <footer class="footer">
+        <div class="container-inline">
+            <div class="row">
+                <div class="column">
+                    <div class="footer-title">
+                        <a href="index.html" class="logo">
+                            <figure class="logo-img">
+                                <img src="assets/images/logo.png" alt="logo">
+                                <figcaption class="logo-text"></figcaption>
+                            </figure>
+                            Lalasia
+                        </a>
+                        <p>
+                            Lalasia is digital agency that help you make better experience iaculis cras in.
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footer-content">
+                        <div class="footer-list__wrapper">
+                            <h5 class="h5 footer-list-title">Product</h5>
+                            <ul class="footer-list">
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">New Arrivals</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Best Selling</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Home Decor</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Kitchen Set</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-list__wrapper">
+                            <h5 class="h5 footer-list-title">Services</h5>
+                            <ul class="footer-list">
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Catalog</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Blog</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Faq</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Pricing</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-list__wrapper">
+                            <h5 class="h5 footer-list-title">Follow Us</h5>
+                            <ul class="footer-list">
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Facebook</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Instagram</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    <!--
+        *CUSTOM SCRIPT
+    -->
+    <script src="assets/js/script.js"></script>
+     <!--
+        ION-ICON SCRIPT
+    -->
+    <script type="module" 
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule 
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
