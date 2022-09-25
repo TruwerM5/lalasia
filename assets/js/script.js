@@ -31,3 +31,20 @@ if(readMoreBtn) {
 }
 
 
+/*
+BUTTON TO TOP
+*/
+
+const btnToTop = document.querySelector('[data-to-top]');
+
+window.addEventListener('scroll', function(){
+    if(window.scrollY > 400) {
+        btnToTop.classList.add('active');
+    } else {
+        btnToTop.classList.remove('active');
+    }
+});
+
+btnToTop.addEventListener('click', function(){
+    window.scrollTo(null, 0);
+});
