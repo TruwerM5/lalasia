@@ -11,6 +11,11 @@ const navLinks = document.querySelectorAll('.navbar-link');
 function addEvent(button) {
     button.addEventListener('click', function() {
         navbar.classList.toggle('active');
+        if(navbar.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
     });
 }
 
